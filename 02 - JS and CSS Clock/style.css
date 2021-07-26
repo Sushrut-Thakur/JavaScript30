@@ -1,0 +1,136 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background: linear-gradient(60deg, black, grey);
+	background-size: 100vw 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.clock {
+	height: 500px;
+	width: 500px;
+	border-radius: 50%;
+	border: 10px solid white;
+	padding: 30px;
+}
+
+.clock-face {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.hand {
+	width: 50%;
+	height: 4px;
+	background-color: blue;
+	position: absolute;
+	top: 50%;
+	border-radius: 10px;
+	transform-origin: 100%;
+}
+
+.transition {
+	transition: all 1s linear;
+}
+
+.hour-hand {
+	width: 120px;
+	margin-left: 89px;
+	background-color: red;
+}
+
+.min-hand {
+	width: 180px;
+	margin-left: 29px;
+	background-color: green;
+}
+
+.num {
+	position: absolute;
+	font-size: 50px;
+	color: #ff0;
+}
+
+.twelve {
+	left: 175px;
+	top: 0;
+}
+
+.three {
+	right: 0;
+	top: 181px;
+}
+
+.six {
+	bottom: 0;
+	left: 183px;
+}
+
+.nine {
+	left: 0;
+	top: 181px;
+}
+
+.screw {
+	height: 15px;
+	width: 15px;
+	background-color: white;
+	border-radius: 50%;
+	top: 205px;
+	left: 205px;
+}
+
+@media (max-width: 500px) {
+	.clock {
+		height: 200px;
+		width: 200px;
+		padding: 10px;
+	}
+
+	.hour-hand {
+		width: 50px;
+		margin-left: 30px;
+	}
+
+	.min-hand {
+		width: 65px;
+		margin-left: 15px;
+	}
+
+	.num {
+		font-size: 20px;
+	}
+
+	.twelve {
+		left: 66px;
+		top: 0;
+	}
+
+	.three {
+		right: 0;
+		top: 68px;
+	}
+
+	.six {
+		bottom: 0;
+		left: 69px;
+	}
+
+	.nine {
+		left: 0;
+		top: 68px;
+	}
+
+	.screw {
+		height: 10px;
+		width: 10px;
+		top: 75px;
+		left: 75px;
+	}
+}
